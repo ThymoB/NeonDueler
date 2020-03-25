@@ -651,7 +651,7 @@ MonoBehaviour:
   isAttacking: 0
   canMove: 1
   moveSpeed: 2
-  bounty: 1
+  bounty: 10
   healthBar: {fileID: 8988889899187323090}
   nav: {fileID: 0}
 --- !u!114 &1277202120043928335

@@ -84,6 +84,7 @@ public class Enemy : MonoBehaviour
 
     public void Die(PlayerCharacter killer) {
         isActive = false;
+        bounty = Mathf.RoundToInt(killer.flatBonusMoneyPerKill * killer.moneyPerKillModifier);
         killer.player.UpdateMoney(bounty);
         PlayArea.Instance.enemiesInArea.Remove(this);
         EnemySpawner.Instance.EnemyKilled();

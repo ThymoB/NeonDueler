@@ -29,7 +29,10 @@ public class ActionCard : Card
                 break;
         }
     }
-
+    public void DraftCard() {
+        if (GameManager.Instance.players[0].money >= price) GameManager.Instance.DraftCard(this);
+        else Debug.LogWarning("Not enough money to buy!");
+    }
 
     public void UseCard() {
         if (CanUse()) {

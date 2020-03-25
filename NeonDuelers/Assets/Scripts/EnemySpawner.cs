@@ -33,6 +33,7 @@ public class EnemySpawner : MonoBehaviour
     }
 
     public void StartSpawning(){
+        curWave = 1;
         enemiesLeftToSpawn = enemiesThisWave;
         enemiesLeftThisWave = enemiesThisWave;
         waveBar.slider.maxValue = enemiesThisWave;

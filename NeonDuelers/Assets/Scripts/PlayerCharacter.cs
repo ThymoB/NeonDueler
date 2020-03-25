@@ -8,6 +8,7 @@ public class PlayerCharacter : MonoBehaviour {
     public Player player;
     public int maxHealth = 100;
     public float health = 100;
+    public float armor = 0f;
     public int maxEnergy = 100;
     public int energy = 100;
     public float energyRegen = 2f;
@@ -23,9 +24,11 @@ public class PlayerCharacter : MonoBehaviour {
     public HealthBar healthBar;
     public CastBar castBar;
     public TextMeshProUGUI energyText;
+    public float moneyPerKillModifier = 1f;
+    public float flatBonusMoneyPerKill = 0f;
 
     Enemy closestEnemy;
-    NavMeshAgent nav;
+    public NavMeshAgent nav;
 
     private void Awake() {
         nav = GetComponent<NavMeshAgent>();

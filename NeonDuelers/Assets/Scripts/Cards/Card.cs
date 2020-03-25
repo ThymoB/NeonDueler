@@ -22,10 +22,7 @@ public class Card : MonoBehaviour
         costAmount.text = price.ToString();
     }
 
-    public void DraftCard() {
-        if (GameManager.Instance.players[0].money >= price) GameManager.Instance.DraftCard(this);
-        else Debug.LogWarning("Not enough money to buy!");
-    }
+
 
     public void PurchaseCard() {
         Debug.Log("Purchased!");

@@ -2724,8 +2724,14 @@ MonoBehaviour:
   - {fileID: 4904510268414843627, guid: 24ee64e2ac6ad9249bcb5299e4522bc9, type: 3}
   - {fileID: 5313813852861062596, guid: 41e5c62d676671a49ab5d552f83b6812, type: 3}
   - {fileID: 8109024948622402245, guid: 6965a942798def74aad5e2d9380ce615, type: 3}
+  - {fileID: 1623606140894969294, guid: 3e31e767d8e8e86429371692410ccf34, type: 3}
+  - {fileID: 1173261606047029100, guid: 4ba051c362a875945b7f3611208b92d9, type: 3}
+  - {fileID: 6154704656341918829, guid: 7feb31753bdb68043aab2e0cc6390267, type: 3}
+  - {fileID: 1591249075100446019, guid: 750e4c9dd22ddec4bb8ee42753f228e5, type: 3}
+  - {fileID: 1349480287688056801, guid: 51286441aacaa0b49ae5f97fd682fe67, type: 3}
+  - {fileID: 2628081506778366102, guid: 43f385eaa20bfa34695b6dc7c3e04d32, type: 3}
   cardsOffered: {fileID: 341681512}
-  startMoney: 1000
+  startMoney: 500
   draftRerolls: 20
   draftOffers: 3
   draftTime: 60
@@ -6744,6 +6750,7 @@ MonoBehaviour:
   player: {fileID: 1152028082}
   maxHealth: 100
   health: 100
+  armor: 0
   maxEnergy: 100
   energy: 100
   energyRegen: 1
@@ -6759,6 +6766,9 @@ MonoBehaviour:
   healthBar: {fileID: 1755371288}
   castBar: {fileID: 8084919878715451335}
   energyText: {fileID: 1095452891}
+  moneyPerKillModifier: 1
+  flatBonusMoneyPerKill: 0
+  nav: {fileID: 0}
 --- !u!114 &1612260683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9241,8 +9251,8 @@ MonoBehaviour:
     type: 3}
   spawnInterval: 5
   variance: 0.2
-  spawnCooldown: 2.5
-  spawnCooldownReductionOnDeath: 1
+  spawnCooldown: 4
+  spawnCooldownReductionOnDeath: 2
 --- !u!1001 &2045114869
 PrefabInstance:
   m_ObjectHideFlags: 0

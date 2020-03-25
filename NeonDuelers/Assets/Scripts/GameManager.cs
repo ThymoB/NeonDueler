@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour {
     void GiveStartMoney() {
         foreach (Player player in players) {
             player.money = startMoney;
+            player.moneyCounter.text = startMoney.ToString();
         }
     }
 
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour {
         StartCoroutine(DraftTimer());
     }
 
-   void OfferCards(Player player, int amount) {
+   public void OfferCards(Player player, int amount) {
         //Remove all offered cards
         DestroyOffers();
 
